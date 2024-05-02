@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block title %}
+   Get users page
+{% endblock %}
+			    
+		
+
+
+{% block content %}
+       <ul>
+    	{% for user in users %}
+    	   <li>{{user.username}} - {{user.email}}</li>
+    	   <a href="{{url_for('updateuser', id=user.id)}}">Update</a>
+    	   <a href="{{url_for('deleteuser', id=user.id)}}">Delete</a>
+    	 
+    	{% endfor %}
+       </ul>
+   
+{% endblock %}
+		
