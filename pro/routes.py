@@ -16,6 +16,65 @@ def home():
 
 
 
+
+@app.route('/register', methods=['GET', 'POST'])
+def regsiter():
+	if request.method == 'POST':
+		username = request.form["username"]
+		email = request.form["email"]
+		password = request.form["password"]
+		confirm_password = request.form["confirm_password"]
+		if password == confirm_password:
+			hashed_password = generate_password_hash(password)
+			user = User(username=username, email=email, password=hashed_password)
+			db.session.add(user)
+			db.session.commit()
+			return redirect(url_for("login"))
+
+	return render_template("register.html")
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+	if request.method == 'POST':
+		username = request.form["username"]
+		password = request.form["password"]
+
+		user = User.query.filter_by(username=username).first()
+
+		if check_password_hash(user.password, password):
+			session['user'] = username
+			return redirect(url_for("dashboard"))
+
+	return render_template("login.html")
+
+
+
+@app.route('/dashboard')
+def dashboard():
+	if 'user' in session:
+		user = session['user']
+		flash(f"Hello {user}")
+	return render_template("dashboard.html")
+
+
+@app.route('/logout')
+def logout():
+	session.pop('user', None)
+	return redirect(url_for("login"))
+
+
+
+@app.route('/profile')
+def profile():
+	if 'user' in session:
+		user = session['user']
+		user.form["username"] = user.username 
+		user.form["email"] = user.email 
+	return render_template("profile.html")
+
+
+
 @app.route('/user', methods=["GET", "POST"])
 def adduser():
 	if request.method == 'POST':
