@@ -6,9 +6,16 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 from pro.models import User
 
+"""
+def current_user(user_id):
+	if 'user':
+		user = session['user']
+	    user = User.query.filter_by(user_id=user_id)
+	else:
+		flash("You nedd to login")
+		retur redirect(url_for("login"))
 
-
-
+"""
 
 @app.route('/')
 def home():
@@ -60,8 +67,11 @@ def dashboard():
 
 @app.route('/logout')
 def logout():
-	session.pop('user', None)
-	return redirect(url_for("login"))
+	if 'user' in session:
+		session.pop('user', None)
+		return redirect(url_for("login"))
+	else:
+		return redirect(url_for("login"))
 
 
 
