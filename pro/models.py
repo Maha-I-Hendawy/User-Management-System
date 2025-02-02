@@ -24,6 +24,8 @@ class Role(db.Model):
 		return f"Role({self.role_name})"
 
 
+# for assigning a role to a user
+
 class User_Role(db.Model):
 	__tablename__='User_Role'
 	user_role_id = db.Column(db.Integer, primary_key=True)
@@ -45,6 +47,8 @@ class Permission(db.Model):
 		return f"Permission({self.perm_name})"
 
 
+
+for assigning permissions to a role
 
 class Role_Permission(db.Model):
 	__tablename__='Role_Permission'
