@@ -1,4 +1,4 @@
-# Linguistics App
+# UMS Software
 
  ## Overview
 The UMS software is a simple crud application with a log-in system and role-based access control.
@@ -42,15 +42,14 @@ This application is implemented with:
    - Creating, reading, updating, and deleting posts
    - Creating, reading, updating, and deleting comments
    
-## Linguistic App Features
+## UMS Features
 
    - User Authentication and Authorization
-   - Posts Management
-   - Comments Management
-   - Word Tokenization
-   - Sentence Tonkenization
-   - Part of speech tagging
-   - Speech-to-text conversion and analysis
+   - User Management
+   - Profile Management
+   - Roles Assignment
+   - Permission Assignment
+   - Groups Management
   
      
 ## Getting Started
