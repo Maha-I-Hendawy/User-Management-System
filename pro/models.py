@@ -48,7 +48,7 @@ class Permission(db.Model):
 
 
 
-for assigning permissions to a role
+# for assigning permissions to a role
 
 class Role_Permission(db.Model):
 	__tablename__='Role_Permission'
