@@ -18,24 +18,29 @@ The UMS software is a simple crud application with a log-in system and role-base
 - Add users to groups
 - Assign permissions to groups
 
-  
+
+
+## Technologies Used
+
 This application is implemented with:
 
-## Back-end Technologies:
+### Back-end Technologies:
 
 - Python
 - Flask
 - Flask-sqlalchemy
 
-## Front-end Technologies:
+### Front-end Technologies:
 
 - HTML
 - CSS
 - Bootstrap
 
+<!-- 
 ## Challenges
 - Challenge:
 - Challenge: 
+-->
 
 ## Future implementations 
 
@@ -83,10 +88,17 @@ This application is implemented with:
      - System Design
 
 ## References
-   - Python:
-   - Flask:
+   - [Python]()
+   - [Flask]()
      
- 
+
+## Available Documentation
+   - [UMS API Documentation](https://miansh.blogspot.com/2025/02/ums-api-documentation.html?q=UMs)
+   - [UMS Database Design Document]()
+   - [UMS Reference Document](https://miansh.blogspot.com/2025/02/ums-reference-document.html?q=ums)
+   - [UMS Software Technical Specification](https://miansh.blogspot.com/2025/02/ums-software-technical-specification.html?q=ums)
+   - [UMS Software Requirements Document](https://miansh.blogspot.com/2025/02/ums-software-requirements-document.html?q=ums)
+   - [UMS Use Cases Document](https://miansh.blogspot.com/2025/02/ums-use-cases-document.html?q=ums)
 
 
 
