@@ -84,7 +84,8 @@ This application is implemented with:
        
    - Project design
      
-     - ![Database Design](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0G_aqNe4EtesRmvaPus-8-BTs5B7EH9XuYpzLv40LE8U0qhsIISKFX67G2n_RyrK5Uu48R334rXFWEZHG9d5D3wYd4dLckDq_ORBBkzwRxTdCcgaldV7OJz2RfIhHdraXXW5Il1tkZqLvi64uG8xyMY9uy8a2y8gJlNelTP3iFVUZRYRjqu7UXgSfi84/s952/UMS_database_design.png)
+     - Database Design
+       ![Database Design](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0G_aqNe4EtesRmvaPus-8-BTs5B7EH9XuYpzLv40LE8U0qhsIISKFX67G2n_RyrK5Uu48R334rXFWEZHG9d5D3wYd4dLckDq_ORBBkzwRxTdCcgaldV7OJz2RfIhHdraXXW5Il1tkZqLvi64uG8xyMY9uy8a2y8gJlNelTP3iFVUZRYRjqu7UXgSfi84/s952/UMS_database_design.png)
      - System Design
 
 ## References
